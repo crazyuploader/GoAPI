@@ -4,5 +4,5 @@
 
 ## Technologies Used
 
-* [Fiber](https://gofiber.io/)
-* [godotenv](https://github.com/joho/godotenv)
+- [Fiber](https://gofiber.io/)
+- [godotenv](https://github.com/joho/godotenv)
