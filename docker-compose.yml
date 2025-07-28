@@ -1,0 +1,10 @@
+services:
+    goapi_server:
+        container_name: goapi_server
+        build:
+            context: .
+        restart: unless-stopped
+        volumes:
+            - "./.env:/app/.env"
+        ports:
+            - "${PORT:-3100}:3100"

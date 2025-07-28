@@ -14,8 +14,8 @@ import (
 
 func main() {
 	// Load environment variables
-	if err := godotenv.Overload(); err != nil {
-		log.Println("Failed to load Environment Variables from .env file.")
+	if err := godotenv.Load(); err != nil {
+		log.Println("Failed to load Environment Variables from .env file. Falling back to Environment Variables.")
 	}
 
 	// Load configuration
@@ -36,13 +36,13 @@ func main() {
 	// Setup routes
 	routes.SetupRoutes(app)
 
-	// Start API Server
+	// Set API port
 	port := cfg.Port
 	if port == "" {
 		port = "3100"
 	}
 
+	// Start API Server
 	log.Printf("🚀 Server starting on port %s", port)
 	log.Fatal(app.Listen(":" + port))
-
 }
