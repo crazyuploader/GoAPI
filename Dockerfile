@@ -1,7 +1,7 @@
 #
 # Created by Jugal Kishore -- 2025
 #
-FROM golang:1.25.3 AS builder
+FROM golang:1.25.4 AS builder
 
 # Set work directory
 WORKDIR /app
