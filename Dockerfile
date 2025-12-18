@@ -22,7 +22,7 @@ RUN CGO_ENABLED=0 \
     -o api_server cmd/server/main.go
 
 # Production stage
-FROM alpine:3.23.0 AS runner
+FROM alpine:3.23.2 AS runner
 
 LABEL maintainer="Jugal Kishore <me@devjugal.com>"
 LABEL org.opencontainers.image.source="https://github.com/crazyuploader/GoAPI"
