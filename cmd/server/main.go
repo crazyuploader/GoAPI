@@ -6,8 +6,8 @@ import (
 	"github.com/crazyuploader/GoAPI/internal/config"
 	"github.com/crazyuploader/GoAPI/internal/routes"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/logger"
+	"github.com/gofiber/fiber/v3"
+	"github.com/gofiber/fiber/v3/middleware/logger"
 
 	"github.com/joho/godotenv"
 )
